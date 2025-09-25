@@ -73,6 +73,19 @@ h1 {
     color: #8c8078;
 }
 
+/* Efek Hover untuk Ubin */
+.tile:hover {
+    transform: scale(1.05); /* Memperbesar ubin saat kursor di atasnya */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), /* Efek glow putih */
+                0 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan normal */
+    z-index: 10;
+}
+
+/* Transisi untuk efek yang halus */
+.tile {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
 /* Papan Permainan */
 #board {
     width: 420px;
